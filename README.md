@@ -40,4 +40,8 @@ Deploy function using:
 
 `gcloud functions deploy NAME --runtime python37 --trigger-http`
 
+**NOTE:** This function will be publically available. Extra settings need to be applied to secure the function (using service account permissions etc).
+
 Ensure that NAME is the name of the function that is to be called when the function is run. 
+
+Navigate to cloud functions in GCP to view your newly deployed function: [https://console.cloud.google.com/functions/](https://console.cloud.google.com/functions/) 
