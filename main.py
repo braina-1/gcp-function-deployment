@@ -1,2 +1,6 @@
 def hello(request):
-    return "Hello World!"
+    request_json = request.get_json(silent=True)
+
+    abc = request_json.get('abc')
+
+    return(abc)
