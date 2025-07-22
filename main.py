@@ -1,6 +1,4 @@
-from flask import jsonify
+from google.auth.transport.requests import Request
 
-def hello(request):
-    request_json = request.get_json(silent=True)
-
+def hello_http(request):
     return jsonify({"error":"abc"})
