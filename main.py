@@ -1,4 +1,4 @@
-from google.auth.transport.requests import Request
+import google.auth
 
 def hello_http(request):
     return jsonify({"error":"abc"})
